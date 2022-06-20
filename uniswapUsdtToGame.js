@@ -13,15 +13,15 @@ const provider = new ethers.providers.JsonRpcProvider(INFURA_URL_TESTNET) // Rop
 const poolAddress = "0x4D7C363DED4B3b4e1F954494d2Bc3955e49699cC" // UNI/WETH
 const swapRouterAddress = '0xE592427A0AEce92De3Edee1F18E0157C05861564'
 
-const name0 = 'Wrapped Ether'
-const symbol0 = 'WETH'
+const name0 = 'Tether USD'
+const symbol0 = 'USDT'
 const decimals0 = 18
-const address0 = '0xc778417e063141139fce010982780140aa0cd5ab'
+const address0 =  "0xdAC17F958D2ee523a2206206994597C13D831ec7"  //'0xc778417e063141139fce010982780140aa0cd5ab'
 
-const name1 = 'Uniswap Token'
-const symbol1 = 'UNI'
+const name1 = 'GAME Credits'
+const symbol1 = 'GAME'
 const decimals1 = 18
-const address1 = '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
+const address1 =  "0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437"   //'0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
 
 async function main() {
   const poolContract = new ethers.Contract(
@@ -49,7 +49,7 @@ async function main() {
     decimals0
   )
 
-  const approvalAmount = (amountIn * 100000).toString()
+  const approvalAmount = (amountIn * 10).toString()
   const tokenContract0 = new ethers.Contract(
     address0,
     ERC20ABI,
