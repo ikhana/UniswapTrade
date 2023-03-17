@@ -26,7 +26,7 @@ Our goal for this repo is to achieve the trade off between two tokens to the low
   - `INFURA_URL=<infura url>`
    - `WALLET_SECRET =<wallet private key>`
    - `WALLET_ADDRESS =<wallet public key>`
-  you can learn how to have your public cnad private key from `Metmask` https://www.youtube.com/watch?v=qsvwg-cC928
+  you can learn how to have your public and private key from `Metmask` https://www.youtube.com/watch?v=qsvwg-cC928
   
 
 <br>
